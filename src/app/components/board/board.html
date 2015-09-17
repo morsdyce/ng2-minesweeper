@@ -34,8 +34,8 @@
         <tr *ng-for="#row of game.minefield.rows">
           <td *ng-for="#spot of row.spots"
               (click)="revealSpot(spot)"
-              (onContextMenu)="flagSpot(spot)">
-            <cell [spot]="text"></cell>
+              (contextmenu)="flagSpot($event, spot)">
+            <cell [spot]="spot"></cell>
           </td>
         </tr>
       </table>

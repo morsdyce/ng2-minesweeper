@@ -69,7 +69,8 @@ module.exports = {
       'angular2/router',
       'angular2/http',
       'angular2/debug',
-      'angular2/di'
+      'angular2/di',
+      'lodash'
     ],
     'app': [
       // App

@@ -5,7 +5,7 @@ const template = require('./cell.html');
 
 @Component({
   selector: 'cell',
-  properties: ['string: spot']
+  properties: ['spot']
 })
 @View({
   directives: [NgIf],
@@ -14,10 +14,14 @@ const template = require('./cell.html');
 export class Cell {
 
   images:any;
-  spot:string;
+  spot:any;
 
   constructor() {
-    //this._loadImages();
+    this._loadImages();
+  }
+
+  log() {
+    console.log(this.spot);
   }
 
   _loadImages() {

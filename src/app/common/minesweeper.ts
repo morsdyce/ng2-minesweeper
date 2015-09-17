@@ -1,7 +1,6 @@
 'use strict';
 
 import Spot from './spot/spot';
-import _ from 'lodash';
 
 export default class MineSweeper {
 

@@ -1,14 +1,31 @@
-<img src="images/covered.png"/>
+<span *ng-if="spot.isRevealed && spot.content.type === 'NUMBER1'">
+  <img src="images/number-1.png"/>
+</span>
+<span *ng-if="spot.isRevealed && spot.content.type === 'NUMBER2'">
+  <img src="images/number-2.png"/>
+</span>
 
-<!--<span *ng-if="spot.isRevealed">-->
-  <!--<img [src]="images[Cell.spot.content.type]"/>-->
-<!--</span>-->
+<span *ng-if="spot.isRevealed && spot.content.type === 'NUMBER3'">
+  <img src="images/number-3.png"/>
+</span>
 
-<!--<span *ng-if="!spot.isRevealed && spot.isFlagged">-->
-  <!--<img [src]="images['covered']"/>-->
-<!--</span>-->
+<span *ng-if="spot.isRevealed && spot.content.type === 'NUMBER4'">
+  <img src="images/number-4.png"/>
+</span>
 
-<!--<span *ng-if="!spot.isRevealed && spot.isFlagged">-->
-  <!--<img [src]="images['flagged']"/>-->
-<!--</span>-->
+<span *ng-if="spot.isRevealed && spot.content.type === 'NUMBER5'">
+  <img src="images/number-5.png"/>
+</span>
+
+<span *ng-if="spot.isRevealed && spot.content.type === 'MINE'">
+  <img src="images/MINE.png"/>
+</span>
+
+<span *ng-if="!spot.isRevealed && !spot.isFlagged">
+  <img src="images/covered.png"/>
+</span>
+
+<span *ng-if="!spot.isRevealed && spot.isFlagged">
+  <img src="images/flag-mine.png"/>
+</span>
 

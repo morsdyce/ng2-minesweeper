@@ -1,7 +1,6 @@
 'use strict';
 
 import SPOT_TYPES from './spot-types.constants.ts';
-import _ from 'lodash';
 
 export default class Spot {
 

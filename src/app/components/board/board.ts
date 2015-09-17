@@ -34,7 +34,8 @@ export class Board {
     }
   }
 
-  flagSpot(spot) {
+  flagSpot($event, spot) {
+    $event.preventDefault();
     spot.flagSpot();
   }
 
