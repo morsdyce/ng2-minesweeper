@@ -3,13 +3,14 @@ import {TitleBar} from '../title-bar/title-bar';
 import Minefield from '../../common/minesweeper';
 import MineSweeper from "../../common/minesweeper";
 import {Cell} from '../cell/cell';
+import {Bombs} from '../bombs/bombs';
 const template = require('./board.html');
 
 @Component({
   selector: 'board' // <app></app>
 })
 @View({
-  directives: [TitleBar, NgFor, Cell],
+  directives: [TitleBar, NgFor, Cell, Bombs],
   template: template
 })
 export class Board {
@@ -18,6 +19,10 @@ export class Board {
   constructor() {
     this.game = new MineSweeper();
     this.text = 'Hello';
+  }
+
+  remainingBombs() {
+    return this.game.remainingBombs();
   }
 
   revealSpot(spot) {
