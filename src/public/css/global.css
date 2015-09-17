@@ -1,0 +1,19 @@
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  width: 700px;
+  margin: 0 auto;
+  background: #11807F;
+}
+
+h2 {
+  text-align: center;
+  font-size: 31px;
+}
